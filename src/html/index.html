@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+		<!-- <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" /> -->
+		<link rel="stylesheet" href="../lib/metro4/css/metro-all.min.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<title>SGI - Oruc!</title>
+		<script>
+			window.on_page_functions = [];
+		</script>
+	</head>
+	<body class="m4-cloak h-vh-100">
+		<div class="navview-content h-100">
+			<div id="content-wrapper" class="content-inner h-100" style="overflow-y: auto;">
+				<div class="row bd-lightGray ml-3 mr-3">
+					<div class="cell-md-4 d-flex flex-align-center">
+						<h3 class="dashboard-section-title text-center text-left-md w-100 pt-3">SGI-ORUC</h3>
+					</div>
+
+					<div class="cell-md-8 d-flex flex-justify-center flex-justify-end-md flex-align-center">
+						<ul class="breadcrumbs bg-transparent">
+							<li class="page-item">
+								<a href="#" class="page-link"><span class="mif-meter"></span></a>
+							</li>
+							<li class="page-item"><a href="#" class="page-link">Painel</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div
+					data-role="panel"
+					data-title-caption="Painel de Apuração"
+					data-collapsible="true"
+					data-title-icon="<span class='mif-chart-line'></span>"
+					class="mt-4"
+				>
+					<div class="m-3">
+						<div class="row">
+							<div class="cell-lg-3 cell-md-6 mt-2">
+								<div class="more-info-box bg-green fg-white">
+									<div class="content">
+										<h2 id="todaysSales" class="text-bold mb-0">0,00</h2>
+										<div>Total de Vendas Hoje</div>
+									</div>
+									<div class="icon">
+										<span class="mif-cart"></span>
+									</div>
+									<a href="#" id="todaysSalesDate" class="more"></a>
+								</div>
+							</div>
+							<div class="cell-lg-3 cell-md-6 mt-2">
+								<div class="more-info-box bg-orange fg-white">
+									<div class="content">
+										<h2 id="totalWeekSales" class="text-bold mb-0">0,00</h2>
+										<div>Total de Vendas esta Semana</div>
+									</div>
+									<div class="icon">
+										<span class="mif-books"></span>
+									</div>
+									<a href="#" id="totalWeekSalesDate" class="more"></a>
+								</div>
+							</div>
+							<div class="cell-lg-3 cell-md-6 mt-2">
+								<div class="more-info-box bg-red fg-white">
+									<div class="content">
+										<h2 id="totalMonthSales" class="text-bold mb-0">0,00</h2>
+										<div>Total de Vendas este Mês</div>
+									</div>
+									<div class="icon">
+										<span class="mif-chart-bars"></span>
+									</div>
+									<a href="#" id="totalMonthSalesDate" class="more"></a>
+								</div>
+							</div>
+							<div class="cell-lg-3 cell-md-6 mt-2">
+								<div class="more-info-box bg-cyan fg-white">
+									<div class="content">
+										<h2 id="totalYearSales" class="text-bold mb-0">0,00</h2>
+										<div>Total de Vendas este Ano</div>
+									</div>
+									<div class="icon">
+										<span class="mif-user-check"></span>
+									</div>
+									<a href="#" id="totalYearSalesDate" class="more"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="ml-2 text-center d-none">
+						<button id="buttonExportProducts" class="button primary">
+							Exportar Todos
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="d-flex flex-justify-between bd-lightGray">
+				<div class="text-left">SOFTEK ©2020 - Todos direitos reservados</div>
+				<div class="text-right" id="appVersion">Versão 0.0.1</div>
+			</div>
+		</div>
+
+		<!-- You can also require other files to run in this process -->
+		<script>
+			var eRequire = require;
+			window.$ = window.jQuery = require('../lib/jquery/jquery-3.4.1.min.js');
+		</script>
+		<script src="../lib/metro4/js/metro.min.js"></script>
+		<script src="../js/charts.js"></script>
+		<script src="../js/index.js"></script>
+		<script src="../js/renderer.js"></script>
+	</body>
+</html>
