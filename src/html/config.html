@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SGI Sincronizador :: Configurações</title>
+    <link rel="stylesheet" href="./../css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="./../css/materialize.min.css">
+    <link rel="stylesheet" href="./../css/nprogress.css">
+    <link rel="stylesheet" href="./../css/pnotify.custom.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <!--Import your style sheets here-->
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+
+<body style="background: none !important;">
+    <div class="container">
+        <div class="row">
+            <form>
+                <div class="col s12">
+                    <blockquote class="mybq">
+                        <h5>Configurações</h5>
+                    </blockquote>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="broadServer" type="text" class="validate">
+                            <label for="broadServer">Servidor de Notificação ex.: 127.0.0.1:3000</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="chatServer" type="text" class="validate">
+                            <label for="chatServer">Servidor de Chat ex.: 127.0.0.1:3001</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button id="btnSave" class="btn waves-effect waves-light">Salvar</button>
+                        <button id="btnCancel" class="btn waves-effect waves-light">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var eRequire = require;
+        window.$ = window.jQuery = require('./../js/libs/jquery.min.js');
+    </script>
+    <script src="./../js/libs/hammer.min.js" onload="window.Hammer = module.exports;"></script>
+    <script src="./../js/libs//nprogress.js"></script>
+    <script src="./../js/libs/materialize.min.js"></script>
+    <script src="./../js/libs/pnotify/pnotify.custom.min.js"></script>
+    <!--Import your js scripts here  -->
+    <script src="./../js/config.js"></script>
+
+</body>
+
+</html>
