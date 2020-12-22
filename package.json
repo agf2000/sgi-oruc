@@ -28,7 +28,7 @@
 		"metro4": "^4.3.6",
 		"moment": "^2.25.3",
 		"mssql": "^6.2.0",
-		"node-notifier": "^7.0.0",
+		"node-notifier": "^8.0.1",
 		"nprogress": "^0.2.0",
 		"progress": "^2.0.3"
 	},
