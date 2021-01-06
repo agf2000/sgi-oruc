@@ -18,7 +18,7 @@
 		"electron-builder": "^22.6.0"
 	},
 	"dependencies": {
-		"axios": "^0.19.2",
+		"axios": "^0.21.1",
 		"electron-devtools-installer": "^3.0.0",
 		"electron-json-storage": "^4.1.8",
 		"electron-log": "^4.2.0",
